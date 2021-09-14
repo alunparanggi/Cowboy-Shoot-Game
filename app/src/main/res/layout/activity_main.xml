@@ -9,6 +9,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:importantForAccessibility="no"
         android:scaleType="centerCrop"
         android:src="@drawable/bg_game" />
 
@@ -17,6 +18,7 @@
         android:layout_width="@dimen/_80sdp"
         android:layout_height="@dimen/_80sdp"
         android:layout_marginBottom="@dimen/_16sdp"
+        android:importantForAccessibility="no"
         android:padding="@dimen/_8sdp"
         android:src="@drawable/ic_arrow_up"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,6 +30,7 @@
         android:layout_width="@dimen/_80sdp"
         android:layout_height="@dimen/_80sdp"
         android:layout_marginBottom="@dimen/_16sdp"
+        android:importantForAccessibility="no"
         android:padding="@dimen/_8sdp"
         android:src="@drawable/ic_arrow_down"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,10 +44,11 @@
         android:layout_height="@dimen/_80sdp"
         android:layout_marginBottom="@dimen/_16sdp"
         android:gravity="center"
+        android:text="@string/text_fire"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/iv_arrow_down"
-        tools:text="RESTART" />
+        tools:text="@string/text_restart" />
 
     <TextView
         android:id="@+id/tv_game_result"
@@ -73,20 +77,25 @@
             android:id="@+id/iv_first_player_0"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
-            android:src="@drawable/ic_cowboy_left_shoot_false" />
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_cowboy_left_shoot_false"
+            android:visibility="invisible" />
 
         <ImageView
             android:id="@+id/iv_first_player_1"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
-            android:layout_marginVertical="@dimen/_16sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:importantForAccessibility="no"
             android:src="@drawable/ic_cowboy_left_shoot_false" />
 
         <ImageView
             android:id="@+id/iv_first_player_2"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
-            android:src="@drawable/ic_cowboy_left_shoot_false" />
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_cowboy_left_shoot_false"
+            android:visibility="invisible" />
 
     </LinearLayout>
 
@@ -105,20 +114,25 @@
             android:id="@+id/iv_second_player_0"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
-            android:src="@drawable/ic_cowboy_right_shoot_false" />
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_cowboy_right_shoot_false"
+            android:visibility="invisible" />
 
         <ImageView
             android:id="@+id/iv_second_player_1"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
-            android:layout_marginVertical="@dimen/_16sdp"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:importantForAccessibility="no"
             android:src="@drawable/ic_cowboy_right_shoot_false" />
 
         <ImageView
             android:id="@+id/iv_second_player_2"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
-            android:src="@drawable/ic_cowboy_right_shoot_false" />
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_cowboy_right_shoot_false"
+            android:visibility="invisible" />
 
     </LinearLayout>
 

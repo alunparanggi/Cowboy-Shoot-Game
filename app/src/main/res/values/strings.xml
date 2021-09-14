@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Cowboy Shoot</string>
+    <string name="text_you_win">You Win!</string>
+    <string name="text_you_lose">You Lose!</string>
+    <string name="text_restart">RESTART</string>
+    <string name="text_fire">FIRE</string>
 </resources>
